@@ -18,7 +18,7 @@
     }, 10000);
     function callApi()
     {
-         axios.get("http://165.227.109.228/")
+         axios.get("http://165.227.109.228:3000/")
  .then(resp=>{
      console.log(resp)
     document.getElementById("date").innerHTML = resp.data;
