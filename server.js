@@ -6,10 +6,10 @@ app.use(cors());
 
 const port = 3000
 
-app.get('/', function(req, res) => {
+app.get('/', function(req, res){
     var data =axios.get(" https://pnyv9hc928.execute-api.us-east-2.amazonaws.com/prod")
  .then((response) =>{
-    res.send=(response.data);
+    res.send(response.data);
              });
 
 });
